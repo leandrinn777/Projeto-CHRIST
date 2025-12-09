@@ -16,7 +16,7 @@ body {
 }
 
 /* ---- TÍTULO ---- */
-h1 {
+h1, h2 {
     text-align: center;
     color: #f0a30c;
     margin-top: 20px;
@@ -44,7 +44,7 @@ h1 {
 }
 
 .menu nav button a {
-    color: #0059b4;
+    color: #f0a30c;
     text-decoration: none;
     font-weight: bold;
 }
@@ -142,7 +142,7 @@ p.rodape {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    opacity: 0.77;
+    opacity: 0.85;
 }
 
 #bodyQuemSomos {
@@ -163,17 +163,18 @@ p.rodape {
 
 #botaoEntrar {
     background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    color: #f0a30c;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
+    transition: 0.3s;
 }
 
 #botaoEntrarIndex {
-    color: #ffffff;
+    color: #f0a30c;
     text-decoration: none;
     font-weight: bold;
     background: #00BFFF;
@@ -183,4 +184,124 @@ p.rodape {
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+}
+#bodyContatos{
+    background-image: url('a86c67a5-c0e2-4ea0-bdce-720cd3c036f6.png');
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontal */
+    align-items: center;
+    /* Centraliza vertical */
+    flex-direction: column;
+    /* Mantém tudo em coluna */
+}
+
+#divContatos{
+    width: 60%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.85;
+}
+
+#bodyOracao{
+    background-image: url('a86c67a5-c0e2-4ea0-bdce-720cd3c036f6.png');
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontal */
+    align-items: center;
+    /* Centraliza vertical */
+    flex-direction: column;
+    /* Mantém tudo em coluna */
+}
+
+#divOracao{
+    width: 60%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.85;
+}
+
+#opiniao {
+    max-width: 550px;
+    margin: 35px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    border-top: 6px solid #0059b4;
+    font-family: Arial, sans-serif;
+}
+
+#opiniao h2 {
+    text-align: center;
+    color: #0059b4;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+#opiniao .texto-intro {
+    text-align: center;
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+#opiniao label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #003f80;
+    font-size: 15px;
+}
+
+#opiniao input,
+#opiniao textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#opiniao button {
+    width: 100%;
+    padding: 14px;
+    background: #00BFFF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#opiniao button:hover {
+    background: #00BFFF;
+    transform: scale(1.02);
+}
+
+.icone-santo {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #0059b4;
+    font-weight: bold;
 }
