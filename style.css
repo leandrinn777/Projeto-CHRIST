@@ -37,6 +37,7 @@ h1, h2 {
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    opacity: 0.87;
 }
 
 .menu nav button:hover {
@@ -115,10 +116,11 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #333;
+    background: #3333336e;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    opacity: 0.87;
 }
 
 p.rodape {
@@ -211,23 +213,199 @@ p.rodape {
     opacity: 0.85;
 }
 
-#bodyOracao{
+/* ===== TELA ===== */
+#bodyOracao {
     background-image: url('a86c67a5-c0e2-4ea0-bdce-720cd3c036f6.png');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+
     margin: 0;
     padding: 0;
-    height: 100%;
+
+    height: 100vh;
+    width: 100vw;
+
     display: flex;
     justify-content: center;
-    /* Centraliza horizontal */
     align-items: center;
-    /* Centraliza vertical */
     flex-direction: column;
-    /* Mantém tudo em coluna */
+
+    backdrop-filter: blur(3px); /* efeito suave minimalista */
 }
 
-#divOracao{
+/* ===== CAIXA PRINCIPAL ===== */
+#opiniao {
+    width: 90%;
+    max-width: 480px;
+
+    background: rgba(255, 255, 255, 0.75); /* mais leve + moderno */
+    padding: 25px;
+
+    border-radius: 12px;
+    border: 1px solid #e0e0e0; /* borda minimalista */
+
+    font-family: Arial, sans-serif;
+}
+
+/* ===== TÍTULO ===== */
+#opiniao h2 {
+    text-align: center;
+    color: #003f80;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* ===== TEXTO INTRO ===== */
+#opiniao .texto-intro {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* ===== LABEL ===== */
+#opiniao label {
+    font-weight: 600;
+    color: #003f80;
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* ===== CAMPOS DOS INPUTS ===== */
+#opiniao input,
+#opiniao textarea {
+    width: 100%;
+    padding: 10px 12px;
+
+    border: 1px solid #bfc7d3;
+    border-radius: 8px;
+
+    background: #fafafa;
+
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+/* Efeito minimalista ao focar */
+#opiniao input:focus,
+#opiniao textarea:focus {
+    border-color: #0059b4;
+    background: white;
+}
+
+/* ===== BOTÃO ===== */
+#opiniao button {
+    width: 100%;
+    padding: 12px;
+
+    background: #0059b4;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+/* Hover minimalista */
+#opiniao button:hover {
+    background: #003f80;
+}
+
+/* ===== TEXTO FINAL (Ícone ou frase) ===== */
+.icone-santo {
+    text-align: center;
+    margin-top: 10px;
+
+    font-size: 14px;
+    color: #003f80;
+    opacity: 0.8;
+}
+
+
+#produtos h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #002f6c;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+    opacity: 0.87;
+}
+
+.produto {
+    background: white;
+    width: 230px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.produto button {
+    margin-top: 10px;
+    background: #002f6c;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.preco {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #008037;
+    margin-bottom: 10px;
+}
+
+
+#bodyNossaLoja {
+    background-image: url('a86c67a5-c0e2-4ea0-bdce-720cd3c036f6.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    backdrop-filter: blur(3px); /* efeito suave minimalista */
+}
+
+#diviNossaLoja{
     width: 60%;
     margin: 0 auto;
     background: white;
@@ -237,71 +415,14 @@ p.rodape {
     opacity: 0.85;
 }
 
-#opiniao {
-    max-width: 550px;
-    margin: 35px auto;
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.15);
-    border-top: 6px solid #0059b4;
-    font-family: Arial, sans-serif;
-}
 
-#opiniao h2 {
-    text-align: center;
-    color: #0059b4;
-    margin-bottom: 10px;
-    font-size: 28px;
-}
 
-#opiniao .texto-intro {
-    text-align: center;
-    font-size: 16px;
-    color: #444;
-    margin-bottom: 20px;
-}
 
-#opiniao label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
-    color: #003f80;
-    font-size: 15px;
-}
 
-#opiniao input,
-#opiniao textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 18px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 15px;
-}
 
-#opiniao button {
-    width: 100%;
-    padding: 14px;
-    background: #00BFFF;
-    color: white;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 17px;
-    font-weight: bold;
-    transition: 0.3s;
-}
 
-#opiniao button:hover {
-    background: #00BFFF;
-    transform: scale(1.02);
-}
-
-.icone-santo {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 16px;
-    color: #0059b4;
-    font-weight: bold;
+@media(max-width:800px){
+  .hero-inner{flex-direction:column}
+  .logo{display:none}
+  .footer-inner{flex-direction:column;gap:8px}
 }
