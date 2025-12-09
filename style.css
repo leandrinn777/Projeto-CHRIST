@@ -237,7 +237,7 @@ p.rodape {
 /* ===== CAIXA PRINCIPAL ===== */
 #opiniao {
     width: 90%;
-    max-width: 480px;
+    max-width: 500px;
 
     background: rgba(255, 255, 255, 0.75); /* mais leve + moderno */
     padding: 25px;
@@ -267,10 +267,10 @@ p.rodape {
 
 /* ===== LABEL ===== */
 #opiniao label {
-    font-weight: 600;
+    font-weight: 800;
     color: #003f80;
     font-size: 14px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     display: block;
 }
 
@@ -300,23 +300,23 @@ p.rodape {
 /* ===== BOTÃO ===== */
 #opiniao button {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
 
-    background: #0059b4;
+    background: #00BFFF;
     color: white;
 
     border: none;
-    border-radius: 8px;
+    border-radius: 7px;
 
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 600px;
     cursor: pointer;
     transition: 0.25s;
 }
 
 /* Hover minimalista */
 #opiniao button:hover {
-    background: #003f80;
+    color: #0095cc;
 }
 
 /* ===== TEXTO FINAL (Ícone ou frase) ===== */
@@ -389,23 +389,16 @@ p.rodape {
     background-image: url('a86c67a5-c0e2-4ea0-bdce-720cd3c036f6.png');
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-
     margin: 0;
     padding: 0;
-
-    height: 100vh;
-    width: 100vw;
-
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    backdrop-filter: blur(3px); /* efeito suave minimalista */
+    justify-content: center; /* Horizontal */
+    align-items: center;     /* Vertical */
+    flex-direction: column;  /* Coluna */
 }
 
-#diviNossaLoja{
+#divNossaLoja {
     width: 60%;
     margin: 0 auto;
     background: white;
@@ -415,14 +408,27 @@ p.rodape {
     opacity: 0.85;
 }
 
-
-
+#divMenu{
+    width: 60%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.87;
+    text-align: left;
+    font-size: 25px;
+    color:#f0a30c;
+}
 
 
 
 
 @media(max-width:800px){
-  .hero-inner{flex-direction:column}
-  .logo{display:none}
-  .footer-inner{flex-direction:column;gap:8px}
-}
+    .hero-inner{flex-direction:column}
+    .logo{display:none}
+    .footer-inner{flex-direction:column;gap:8px}
+  }
+
+
+
